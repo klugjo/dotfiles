@@ -1,5 +1,5 @@
 " Fundamentals
-
+" test
 " init autocmd
 autocmd!
 
