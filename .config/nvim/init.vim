@@ -1,5 +1,5 @@
 " Fundamentals
-"
+
 " init autocmd
 autocmd!
 

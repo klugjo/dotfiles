@@ -1,6 +1,13 @@
 let mapleader = " "
 
+" Quality of life
 nnoremap ; :
+xnoremap ; :
+
+" Shortcut for faster save and quit
+nnoremap <silent> <leader>w :<C-U>update<CR>
+" Saves the file if modified and quit
+nnoremap <silent> <leader>q :<C-U>x<CR>
 
 " [R]eload [C]onfig
 nnoremap <leader>rc :so ~/.config/nvim/init.vim<CR>
@@ -8,17 +15,13 @@ nnoremap <leader>rc :so ~/.config/nvim/init.vim<CR>
 nnoremap <leader>cs :let @/ = ""<CR>
 
 " Panels navigation
-nnoremap <leader>ww <C-w>w
-nnoremap <leader>wl <C-w><C-l>
-nnoremap <leader>wh <C-w><C-h>
-nnoremap <leader>wj <C-w><C-j>
-nnoremap <leader>wk <C-w><C-k>
+nnoremap <Left> <C-W>h
+nnoremap <Right> <C-W>l
+nnoremap <Up> <C-W>k
+nnoremap <Down> <C-W>j
 
 " Open File Explorer
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <leader>n :NERDTreeFind<CR>
 
 " Move lines
 nnoremap <S-j> :<C-u>move+<CR>==
