@@ -45,6 +45,9 @@ if has("nvim")
   
   " Prettier
   Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
+  " Git
+  Plug 'lewis6991/gitsigns.nvim'
 endif
 
 call plug#end()

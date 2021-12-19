@@ -20,9 +20,6 @@ nnoremap <Right> <C-W>l
 nnoremap <Up> <C-W>k
 nnoremap <Down> <C-W>j
 
-" Open File Explorer
-nnoremap <leader>n :NERDTreeFind<CR>
-
 " Move lines
 nnoremap <S-j> :<C-u>move+<CR>==
 nnoremap <S-k> :<C-u>move-2<CR>==
